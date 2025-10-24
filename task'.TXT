@@ -1,0 +1,34 @@
+def check_numbers():
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    s = a + b
+    if s >= 100:
+        print("The sum is", s, "and it is greater than 100")
+    else:
+        print("The sum is", s, "and it is smaller than 100")
+
+def delete_y():
+    items = ['Apple', 'Banana', 'Cherry', 'Data']
+    y = input("Enter item to remove: ")
+    if y in items:
+        items.remove(y)
+        print("Item removed successfully")
+    else:
+        print("Item not found")
+    print("Updated list:", items)
+
+check_numbers()
+delete_y()
+
+
+
+
+
+def calc_fact():
+    n = int(input("Enter a positive integer: "))
+    result = 1
+    for i in range(1, n + 1):
+        result = result * i
+    print("The factorial is", result)
+
+calc_fact()
